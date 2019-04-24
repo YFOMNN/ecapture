@@ -1,2 +1,2 @@
-# ec_capture
-It enables users to use webcams easily
+# ecapture
+Docs available in pypi.org
