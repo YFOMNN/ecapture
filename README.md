@@ -35,3 +35,9 @@ The capture function takes three arguments:
   ~~~python
   ec.capture(0,"test",False)
   ~~~
+The full code
+~~~python
+from ecapture import ecapture as ec
+
+ec.capture(0,"test","img.jpg")
+~~~
