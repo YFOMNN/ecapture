@@ -65,7 +65,7 @@ The vidcapture function takes four arguments:
    ec.vidcapture(0,"Video","Demo.avi","q")
    ~~~
   
-  Save name (It can be a variable or a string. If you don't wish to save the image, type False)
+  Save name (It can be a variable or a string. If you don't wish to save the video, type False)
   ~~~python
   ec.vidcapture(0,"Video",False,"q")
   ~~~
