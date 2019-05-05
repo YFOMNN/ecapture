@@ -3,14 +3,10 @@
 
 First run the following command in a cmd window
 ~~~
-pip install opencv-python
-~~~
-
-Then, run 
-~~~
 pip install ecapture
 ~~~
-Create a new python script
+
+Then, Create a new python script
 
 Open the script
 
@@ -41,6 +37,44 @@ The full code
 from ecapture import ecapture as ec
 
 ec.capture(0,"test","img.jpg")
+~~~
+## Delayed Image Capture Demo
+Create a new python script
+
+Open the script
+
+Import the module
+~~~python
+from ecapture import ecapture as ec
+~~~ 
+Capture the image using webcam
+~~~python
+ec.delay_imcapture(0,"Image","Demo.jpg",2)
+~~~
+The vidcapture function takes four arguments:
+  
+  Camera index(first connected webcam will be of index 0. The next webcam will be of index 1)
+  
+  Window name (It can be a variable or a string)
+   
+   ~~~python
+   ec.delay_imcapture(0,"Video","Demo.jpg",2)
+   ~~~
+  
+  Save name (It can be a variable or a string. If you don't wish to save the image, type False)
+  ~~~python
+  ec.delay_imcapture(0,"Video",False,2)
+  ~~~
+  
+  The delay(The time till capturing the image)
+  ~~~python
+  ec.delay_imcapture(0,"Video","Demo.jpg",2)
+  ~~~
+The full code
+~~~python
+from ecapture import ecapture as ec
+
+ec.delay_imcapture(0,"Video","Demo.jpg",2)
 ~~~
 ## Video Capture Demo
 Create a new python script
