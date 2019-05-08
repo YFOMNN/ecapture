@@ -51,7 +51,7 @@ Capture the image using webcam
 ~~~python
 ec.delay_imcapture(0,"Image","Demo.jpg",2)
 ~~~
-The vidcapture function takes four arguments:
+The delay_imcapture function takes four arguments:
   
   Camera index(first connected webcam will be of index 0. The next webcam will be of index 1)
   
@@ -127,7 +127,7 @@ Capture the video using webcam
 ~~~python
 ec.auto_vidcapture(0,"Video","Demo.avi",5)
 ~~~
-The vidcapture function takes four arguments:
+The auto_vidcapture function takes four arguments:
   
   Camera index(first connected webcam will be of index 0. The next webcam will be of index 1)
   
@@ -152,3 +152,31 @@ from ecapture import ecapture as ec
 
 ec.auto_vidcapture(0,"Video","Demo.avi",5)
 ~~~
+## Motion Detection
+Create a new python script
+
+Open the script
+
+Import the module
+~~~python
+from ecapture import ecapture as ec
+~~~ 
+Check for movement using webcam
+~~~python
+ec.motion_detect(0,"x")
+~~~
+The motion_detect function takes two arguments:
+  
+  Camera index(first connected webcam will be of index 0. The next webcam will be of index 1)
+  
+  Key to stop checking for motion. It can be ("q", "x", "a" or any other letter)
+   
+   ~~~python
+   ec.ec.motion_detect(0,"x")
+   ~~~
+The full code
+~~~python
+from ecapture import ecapture as ec
+
+ec.motion_detect(0,"x")
+~~~  
