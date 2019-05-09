@@ -172,7 +172,7 @@ The motion_detect function takes three arguments:
   Key to stop checking for motion. It can be ("q", "x", "a" or any other letter)
    
    ~~~python
-   ec.ec.motion_detect(0,"x")
+   ec.ec.motion_detect(0,"x",0.85)
    ~~~
   Threshold(any value from 0-1)If threshold is set to high value(0.6-1), even the slightest movement will be detected. 
   And if threshold is set to a low value(0-0.59), only more rapid monement will be detected
