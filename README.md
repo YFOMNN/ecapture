@@ -163,9 +163,9 @@ from ecapture import ecapture as ec
 ~~~ 
 Check for movement using webcam
 ~~~python
-ec.motion_detect(0,"x")
+ec.motion_detect(0,"x",0.85)
 ~~~
-The motion_detect function takes two arguments:
+The motion_detect function takes three arguments:
   
   Camera index(first connected webcam will be of index 0. The next webcam will be of index 1)
   
@@ -174,9 +174,11 @@ The motion_detect function takes two arguments:
    ~~~python
    ec.ec.motion_detect(0,"x")
    ~~~
+  Threshold(any value from 0-1)If threshold is set to high value(0.6-1), even the slightest movement will be detected. 
+  And if threshold is set to a low value(0-0.59), only more rapid monement will be detected
 The full code
 ~~~python
 from ecapture import ecapture as ec
 
-ec.motion_detect(0,"x")
+ec.motion_detect(0,"x",0.85)
 ~~~  
