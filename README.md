@@ -1,4 +1,5 @@
 # ecapture
+[![Downloads](https://pepy.tech/badge/ecapture)](https://pepy.tech/project/ecapture)    [![Downloads](https://pepy.tech/badge/ecapture/month)](https://pepy.tech/project/ecapture/month)    [![Downloads](https://pepy.tech/badge/ecapture/week)](https://pepy.tech/project/ecapture/week)
 ## Image Capture Demo
 
 First run the following command in a cmd window
