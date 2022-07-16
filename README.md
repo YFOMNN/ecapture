@@ -27,7 +27,7 @@ Number of Arguments: 4
 
 ~~~python
 import ecapture as ec
-ec.vidCapture(0,"frame", "frame.avi", "x")
+ec.vidCapture(0, "frame", "frame.avi", "x")
 ~~~
 
 ## Arguments:
@@ -48,7 +48,7 @@ Number of Arguments: 4
 
 ~~~python
 import ecapture as ec
-ec.vidCapture(0,"frame", "frame.avi", 5)
+ec.vidCapture(0, "frame", "frame.avi", 5)
 ~~~
 
 ## Arguments:
